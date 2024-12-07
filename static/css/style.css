@@ -1,0 +1,96 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F8F4FF;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Estilo do formulário */
+form {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Estilo dos elementos do formulário */
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    color: #6A5D7B;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #A29CC5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(162, 156, 197, 0.4);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #A29CC5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #8C82B4;
+}
+
+/* Estilo do parágrafo */
+p {
+    font-size: 24px; /* Aumentando o tamanho da fonte */
+    color: #6A5D7B; /* Tom pastel para o texto */
+    background: #FFFFFF; /* Fundo branco para destacar */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo do botão */
+.btn-centro {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #A29CC5; /* Tom pastel do botão */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 10%;
+}
+
+.btn-centro:hover {
+    background-color: #8C82B4; /* Cor mais escura ao passar o mouse */
+    transform: translateY(-2px); /* Elevação do botão ao passar o mouse */
+}
