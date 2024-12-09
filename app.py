@@ -10,11 +10,13 @@ def inicio():
 def pizzaria():
     return render_template('pizzaria.html')
 
-""" ---------------------------------- """
+@app.route('/fazer-pedido')
+def fazer_pedido():
+    return render_template('fazer-pedido.html')
 
 @app.route('/calc_imc')
-def index():
-    return render_template('index.html')
+def calc_imc():
+    return render_template('calc-imc.html')
 
 @app.route('/imc', methods=["GET"])
 def imc():

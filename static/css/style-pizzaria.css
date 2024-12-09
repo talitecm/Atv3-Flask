@@ -1,0 +1,75 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Fundo neutro */
+    color: #333; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco para o conteúdo */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    color: #d32f2f; /* Vermelho vibrante, lembrando a Itália */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Parágrafos */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #4a4a4a;
+}
+
+/* Destaque de palavras importantes */
+strong {
+    color: #388e3c; /* Verde italiano para destacar */
+}
+
+/* Cores do tema italiano */
+body {
+    background-color: #f0f4f1; /* Cor suave de fundo que remete ao tema italiano */
+}
+
+.container {
+    border-left: 6px solid #388e3c; /* Verde da Itália no lado esquerdo */
+    border-right: 6px solid #388e3c;
+}
+
+h1 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Efeito de sombra suave no título */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

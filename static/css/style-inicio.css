@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fefefe; /* Fundo branco suave */
+    color: #4a4a4a; /* Cinza escuro para texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Título */
+h1 {
+    font-size: 4rem; /* Tamanho grande para destaque */
+    font-weight: bold;
+    color: #6d6d6d; /* Cinza médio */
+    text-align: center;
+    margin-bottom: 5%; /* Espaçamento entre o título e os botões */
+    text-transform: uppercase; /* Todas as letras em maiúsculo */
+    letter-spacing: 0.1rem; /* Espaçamento entre as letras */
+    line-height: 1.2; /* Altura da linha ajustada */
+}
+
+/* Container dos botões */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%; /* Largura total para ajustar os botões */
+}
+
+/* Botões */
+.btn-grande {
+    width: 45%; /* Cada botão ocupa 45% do container */
+    height: 20vh;
+    font-size: 1.5rem; /* Tamanho ajustado para os botões */
+    color: #ffffff; /* Texto branco */
+    background-color: #b3c7d6; /* Azul neutro claro */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-grande:hover {
+    background-color: #93afc1; /* Tom mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Pequeno zoom */
+}
+
+.btn-grande:active {
+    background-color: #6d8a9f; /* Tom ainda mais escuro ao clicar */
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f4f4f4; /* Fundo neutro do footer */
+    color: #4a4a4a; /* Texto em cinza escuro */
+    font-size: 1rem;
+    border-top: 1px solid #ddd; /* Linha sutil acima do footer */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .p-grande {
+        font-size: 2.5rem; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .button-container {
+        flex-direction: column; /* Empilha os botões em telas menores */
+        gap: 5%; /* Espaço vertical entre os botões */
+    }
+
+    .btn-grande {
+        width: 80%; /* Ajusta largura dos botões */
+        height: 15%; /* Altura maior para melhor legibilidade */
+        font-size: 1.2rem; /* Texto um pouco menor */
+    }
+}

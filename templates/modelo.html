@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style-pizzaria.css">
+    <title>Pizzaria Potiguar</title>
 </head>
 <body>
+    <header>
+    </header>
     <nav>
-        <a href="">Inicio</a>
-        <a href="">Fazer Pedido</a>
+        <button onclick="window.location.href='/fazer-pedido'">Fazer Pedido</button>
     </nav>
 
-    {% blockc conteudo %}
+    {% block conteudo %}
     {% endblock %}
     
 </body>
