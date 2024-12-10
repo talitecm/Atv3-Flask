@@ -1,0 +1,52 @@
+{% extends "modelo.html" %}
+
+{% block conteudo %}
+
+<div class="container-pedido">
+    <h1>Monte Sua Pizza</h1>
+    <form action="#" method="POST">
+        <div class="opcao">
+            <label for="massa">Escolha a Massa:</label>
+            <select id="massa" name="massa">
+                <option value="fina">Massa Fina</option>
+                <option value="pan">Massa Carvão Ativado</option>
+                <option value="grossa">Massa Grossa</option>
+                <option value="integral">Massa Integral</option>
+            </select>
+        </div>
+
+        <div class="opcao">
+            <label for="queijo">Escolha o Queijo:</label>
+            <select id="queijo" name="queijo">
+                <option value="mussarela">Queijo Mussarela</option>
+                <option value="prato">Queijo Prato</option>
+                <option value="gongonzola">Queijo Gorgonzola</option>
+                <option value="4queijos">4 Queijos</option>
+            </select>
+        </div>
+
+        <div class="opcao">
+            <label for="recheio">Escolha o Recheio:</label>
+            <select id="recheio" name="recheio">
+                <option value="queijo">Queijo</option>
+                <option value="calabresa">Calabresa</option>
+                <option value="frango">Frango</option>
+                <option value="marguerita">Marguerita</option>
+            </select>
+        </div>
+
+        <div class="opcao">
+            <label for="borda">Escolha a Borda:</label>
+            <select id="borda" name="borda">
+                <option value="tradicional">Borda Tradicional</option>
+                <option value="cheddar">Borda de Cheddar</option>
+                <option value="catupiry">Borda de Catupiry</option>
+                <option value="sem_borda">Chocolate</option>
+            </select>
+        </div>
+
+        <button type="submit">Confirmar Pedido</button>
+    </form>
+</div>
+
+{% endblock %}

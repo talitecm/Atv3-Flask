@@ -5,35 +5,95 @@
     box-sizing: border-box;
 }
 
-/* Estilo geral */
+/* Estilo do body e container */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; /* Fundo neutro */
-    color: #333; /* Cor do texto */
+    background-color: #f9f9f9;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 0 20px;
+    flex-direction: column;
 }
 
-/* Container */
 .container {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff; /* Fundo branco para o conteúdo */
+    max-width: 1200px;
+    height: 40vh;
+    margin: auto;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Estilo para centralizar o conteúdo verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha os itens no centro vertical */
+    align-items: center; /* Alinha os itens no centro horizontal */
+    padding: 20px; /* Adicionando um pouco de espaçamento interno */
+    line-height: 1.8; /* Altere esse valor para ajustar o espaçamento entre as linhas */
 }
 
-/* Título */
-h1 {
-    color: #d32f2f; /* Vermelho vibrante, lembrando a Itália */
-    font-size: 2.5rem;
+header {
+    width: 100%; /* A imagem ocupa 100% da largura da tela */
+    height: 40vh; /* A imagem ocupa 30% da altura da tela */
+    overflow: hidden; /* Garante que nada seja mostrado fora da área definida */
+    margin-bottom: 0.25%;
+}
+
+header img {
+    width: 100%; /* A imagem ocupa 100% da largura do header */
+    height: 100%; /* A imagem ocupa 100% da altura do header */
+    object-fit: cover; /* A imagem vai cobrir a área do header sem distorção */
+}
+
+/* Estilo do menu de navegação */
+nav {
+    background-color: #388e3c; /* Tom vermelho que remete à pizza italiana */
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    gap: 20px; /* Espaçamento entre os links */
     margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Botões modernos */
+nav .nav-btn {
+    font-size: 14px;
+    color: #fff;
+    width: 10%;
+    background: linear-gradient(45deg, #388e3c, #d32f2f); /* Gradiente suave entre verde e vermelho */
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 50px;
+    cursor: pointer;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidade */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 30px; /* Bordas arredondadas para um visual moderno */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav .nav-btn:hover {
+    transform: translateY(-5px); /* Efeito de elevação no hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+    background: linear-gradient(45deg, #d32f2f, #388e3c); /* Inversão das cores do gradiente */
 }
 
 /* Parágrafos */
@@ -46,24 +106,10 @@ p {
 
 /* Destaque de palavras importantes */
 strong {
-    color: #388e3c; /* Verde italiano para destacar */
+    color: #388e3c; /* Verde italiano */
 }
 
-/* Cores do tema italiano */
-body {
-    background-color: #f0f4f1; /* Cor suave de fundo que remete ao tema italiano */
-}
-
-.container {
-    border-left: 6px solid #388e3c; /* Verde da Itália no lado esquerdo */
-    border-right: 6px solid #388e3c;
-}
-
-h1 {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Efeito de sombra suave no título */
-}
-
-/* Estilo responsivo */
+/* Responsividade */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -72,4 +118,86 @@ h1 {
     p {
         font-size: 1rem;
     }
+
+    nav .nav-btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+}
+
+.container-pedido {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #388e3c; /* Verde italiano */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para as opções de select */
+.opcao {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #388e3c; /* Verde italiano */
+    font-weight: bold;
+}
+
+select {
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid #388e3c;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+}
+
+select:hover {
+    background-color: #e1e1e1;
+}
+
+/* Estilo para o botão */
+button {
+    font-size: 1.1rem;
+    background-color: #388e3c; /* Verde italiano */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #d32f2f; /* Cor vermelha para hover */
+}
+
+button:active {
+    transform: translateY(0);
 }

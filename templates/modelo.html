@@ -6,15 +6,19 @@
     <link rel="stylesheet" href="../static/css/style-pizzaria.css">
     <title>Pizzaria Potiguar</title>
 </head>
+
 <body>
     <header>
+        <img src="../static/img/pizza-capa.jpg" alt="pizza">
     </header>
     <nav>
-        <button onclick="window.location.href='/fazer-pedido'">Fazer Pedido</button>
-    </nav>
+            <a href="{{url_for('pizzaria')}}">Início</a>
+            <a href="{{url_for('fazer_pedido')}}">Fazer Pedido</a>
+        </nav>
 
     {% block conteudo %}
     {% endblock %}
-    
+
 </body>
+
 </html>
