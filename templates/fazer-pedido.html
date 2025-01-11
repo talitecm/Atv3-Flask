@@ -4,10 +4,11 @@
 
 <div class="container-pedido">
     <h1>Monte Sua Pizza</h1>
-    <form action="#" method="POST">
+    <form action="{{ url_for('confirmacao') }}" method="POST">
         <div class="opcao">
             <label for="massa">Escolha a Massa:</label>
-            <select id="massa" name="massa">
+            <select id="massa" name="massa" required>
+                <option value="" selected disabled>Selecione uma opção</option>
                 <option value="fina">Massa Fina</option>
                 <option value="pan">Massa Carvão Ativado</option>
                 <option value="grossa">Massa Grossa</option>
@@ -17,7 +18,8 @@
 
         <div class="opcao">
             <label for="queijo">Escolha o Queijo:</label>
-            <select id="queijo" name="queijo">
+            <select id="queijo" name="queijo" required>
+                <option value="" selected disabled>Selecione uma opção</option>
                 <option value="mussarela">Queijo Mussarela</option>
                 <option value="prato">Queijo Prato</option>
                 <option value="gongonzola">Queijo Gorgonzola</option>
@@ -27,7 +29,8 @@
 
         <div class="opcao">
             <label for="recheio">Escolha o Recheio:</label>
-            <select id="recheio" name="recheio">
+            <select id="recheio" name="recheio" required>
+                <option value="" selected disabled>Selecione uma opção</option>
                 <option value="queijo">Queijo</option>
                 <option value="calabresa">Calabresa</option>
                 <option value="frango">Frango</option>
@@ -37,7 +40,8 @@
 
         <div class="opcao">
             <label for="borda">Escolha a Borda:</label>
-            <select id="borda" name="borda">
+            <select id="borda" name="borda" required>
+                <option value="" selected disabled>Selecione uma opção</option>
                 <option value="tradicional">Borda Tradicional</option>
                 <option value="cheddar">Borda de Cheddar</option>
                 <option value="catupiry">Borda de Catupiry</option>

@@ -1,0 +1,15 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+<div class="container-confirmacao">
+    <h1>Obrigado pelo seu pedido!</h1>
+    <p>Sua pizza com:</p>
+    <ul>
+        <li>Massa: {{ massa }}</li>
+        <li>Queijo: {{ queijo }}</li>
+        <li>Recheio: {{ recheio }}</li>
+        <li>Borda: {{ borda }}</li>
+    </ul>
+    <p>Será entregue no endereço: <strong>{{ endereco }}</strong> em aproximadamente 40 minutos!</p>
+    <a href="{{ url_for('inicio') }}" class="btn-voltar">Voltar ao Início</a>
+</div>
+{% endblock %}

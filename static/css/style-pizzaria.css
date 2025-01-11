@@ -106,7 +106,7 @@ p {
 
 /* Destaque de palavras importantes */
 strong {
-    color: #388e3c; /* Verde italiano */
+    color: #388e3c;
 }
 
 /* Responsividade */
@@ -140,7 +140,7 @@ strong {
 }
 
 h1 {
-    color: #388e3c; /* Verde italiano */
+    color: #388e3c;
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
@@ -157,7 +157,7 @@ h1 {
 label {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #388e3c; /* Verde italiano */
+    color: #388e3c; 
     font-weight: bold;
 }
 
@@ -179,7 +179,7 @@ select:hover {
 /* Estilo para o botão */
 button {
     font-size: 1.1rem;
-    background-color: #388e3c; /* Verde italiano */
+    background-color: #388e3c;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -195,9 +195,30 @@ button {
 button:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background-color: #d32f2f; /* Cor vermelha para hover */
+    background-color: #d32f2f; 
 }
 
 button:active {
     transform: translateY(0);
+}
+
+.btn-voltar{
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.btn-voltar:active {
+    background-color: #1e7e34;
 }
